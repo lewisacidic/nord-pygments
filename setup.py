@@ -12,6 +12,6 @@ if __name__ == "__main__":
         long_description_content_type="text/markdown",
         license="MIT",
         keywords=["pygments", "style", "nord"],
-        packages=find_packages(),
+        py_modules=["nord_pygments"],
         install_requires=["pygments"]
     )
