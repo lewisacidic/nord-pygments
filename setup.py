@@ -13,5 +13,6 @@ if __name__ == "__main__":
         license="MIT",
         keywords=["pygments", "style", "nord"],
         py_modules=["nord_pygments"],
-        install_requires=["pygments"]
+        install_requires=["pygments"],
+        entry_points={"pygments.styles": "nord = nord_pygments:Nord"}
     )
