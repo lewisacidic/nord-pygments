@@ -3,7 +3,7 @@ from setuptools import setup
 if __name__ == "__main__":
     setup(
         name="nord-pygments",
-        version="0.0.2",
+        version="0.0.3",
         url="https://github.com/lewisacidic/nord-pygments",
         author="Rich Lewis",
         author_email="opensource@richlew.is",
