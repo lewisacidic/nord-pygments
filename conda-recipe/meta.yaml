@@ -1,0 +1,21 @@
+{% set data = load_setup_py_data(setup_file="../setup.py", from_recipe_dir=True) %}
+
+package:
+  name: {{ data.get("name") }}
+  version: {{ data.get("version") }}
+
+source:
+  path: ../
+
+build:
+    script: "{{ PYTHON }} -m pip install . -vv"
+
+requirements:
+  host:
+    - python
+    - pip
+
+  run:
+    - python
+    - pygments
+
