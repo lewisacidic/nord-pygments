@@ -18,6 +18,6 @@ if __name__ == "__main__":
         },
         py_modules=["nord_pygments"],
         url="https://github.com/lewisacidic/nord-pygments",
-        version="0.0.3",
+        version="0.1.0",
         zip_safe=False,
     )
