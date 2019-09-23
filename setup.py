@@ -2,17 +2,22 @@ from setuptools import setup
 
 if __name__ == "__main__":
     setup(
-        name="nord-pygments",
-        version="0.0.3",
-        url="https://github.com/lewisacidic/nord-pygments",
         author="Rich Lewis",
         author_email="opensource@richlew.is",
         description="A nord-inspired style for Pygments",
+        download_url="https://github.com/lewisacidic/nord-pygments/releases",
+        entry_points={"pygments.styles": "nord = nord_pygments:Nord"}
+        install_requires=["pygments"],
+        keywords=["pygments", "style", "nord"],
+        license="MIT",
         long_description=open('README.md').read(),
         long_description_content_type="text/markdown",
-        license="MIT",
-        keywords=["pygments", "style", "nord"],
+        name="nord-pygments",
+        project_urls={
+            "Source": "https://github.com/lewisacidic/nord-pygments",
+        },
         py_modules=["nord_pygments"],
-        install_requires=["pygments"],
-        entry_points={"pygments.styles": "nord = nord_pygments:Nord"}
+        url="https://github.com/lewisacidic/nord-pygments",
+        version="0.0.3",
+        zip_safe=False,
     )
