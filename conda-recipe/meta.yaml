@@ -19,3 +19,9 @@ requirements:
     - python
     - pygments
 
+about:
+  home: {{ data["url"] }}
+  license: {{ data["license"] }}
+  license_file: LICENSE 
+  summary: {{ data["description"] }}
+  dev_url: {{ data["project_urls"]["Source"] }}
